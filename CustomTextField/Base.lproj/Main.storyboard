@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomTextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mode: LTR" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gMU-7r-lHY" customClass="CustomTextField" customModule="CustomTextField" customModuleProvider="target">
+                                <rect key="frame" x="20" y="63" width="560" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="iIK-LK-NYr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mode: RTL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zXd-Hi-uFe" customClass="CustomTextField" customModule="CustomTextField" customModuleProvider="target">
+                                <rect key="frame" x="20.5" y="128" width="560" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mode: CTB" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gRC-nE-qTp" customClass="CustomTextField" customModule="CustomTextField" customModuleProvider="target">
+                                <rect key="frame" x="20" y="193" width="560" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zXd-Hi-uFe" firstAttribute="width" secondItem="gMU-7r-lHY" secondAttribute="width" id="2nx-gO-VJp"/>
+                            <constraint firstItem="gMU-7r-lHY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Io2-Ty-VAB"/>
+                            <constraint firstAttribute="trailing" secondItem="gMU-7r-lHY" secondAttribute="trailing" constant="20" id="LZS-Qh-x1M"/>
+                            <constraint firstItem="zXd-Hi-uFe" firstAttribute="centerX" secondItem="gMU-7r-lHY" secondAttribute="centerX" id="LaH-TX-R8J"/>
+                            <constraint firstItem="zXd-Hi-uFe" firstAttribute="top" secondItem="gMU-7r-lHY" secondAttribute="bottom" constant="30" id="O1E-Z3-KuA"/>
+                            <constraint firstItem="gRC-nE-qTp" firstAttribute="width" secondItem="gMU-7r-lHY" secondAttribute="width" id="Ohg-bd-C8E"/>
+                            <constraint firstItem="gMU-7r-lHY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="43" id="Pzz-Vt-FnT"/>
+                            <constraint firstItem="gRC-nE-qTp" firstAttribute="height" secondItem="gMU-7r-lHY" secondAttribute="height" id="TGj-46-BOJ"/>
+                            <constraint firstItem="zXd-Hi-uFe" firstAttribute="height" secondItem="gMU-7r-lHY" secondAttribute="height" id="cnJ-Aw-VQE"/>
+                            <constraint firstItem="gRC-nE-qTp" firstAttribute="top" secondItem="zXd-Hi-uFe" secondAttribute="bottom" constant="30" id="lgH-gi-YPB"/>
+                            <constraint firstItem="gRC-nE-qTp" firstAttribute="centerX" secondItem="gMU-7r-lHY" secondAttribute="centerX" id="qTI-R9-3J1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField_CTB" destination="gRC-nE-qTp" id="t5x-Fo-fgd"/>
+                        <outlet property="textField_LTR" destination="gMU-7r-lHY" id="tOw-Te-Vyl"/>
+                        <outlet property="textField_RTL" destination="zXd-Hi-uFe" id="UCq-qk-WtR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228" y="337"/>
+        </scene>
+    </scenes>
+</document>
