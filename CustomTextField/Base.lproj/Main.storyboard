@@ -51,11 +51,6 @@
                             <constraint firstItem="gRC-nE-qTp" firstAttribute="centerX" secondItem="gMU-7r-lHY" secondAttribute="centerX" id="qTI-R9-3J1"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="textField_CTB" destination="gRC-nE-qTp" id="t5x-Fo-fgd"/>
-                        <outlet property="textField_LTR" destination="gMU-7r-lHY" id="tOw-Te-Vyl"/>
-                        <outlet property="textField_RTL" destination="zXd-Hi-uFe" id="UCq-qk-WtR"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
